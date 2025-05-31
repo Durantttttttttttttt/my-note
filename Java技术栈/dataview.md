@@ -1,0 +1,265 @@
+# 修改笔记时间
+
+问题：笔记再修改会导致之前修改的记录没有了，所以这里干脆就是统计所有修改文档的最近时间：
+
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd HH:mm:ss") AS "修改时间", file.name AS "文件名"
+FROM ""
+WHERE file.mtime >= date("2025-05-12") AND file.mtime < date("2025-12-31")
+SORT file.mtime desc
+```
+
+
+# 规划
+
+5.22，星期四，完成JUC和MySQL的面试题
+
+5.23，星期五，完成Redis和SSM面试题，开始投简历
+
+5.24和5.25，星期六星期天，边背八股（黑马面试专题：微服务篇、消息中间件篇、常见集合篇、设计模式篇、技术场景篇），边投简历
+
+
+
+
+# 日记
+下面写了四件事情：工作能力、沟通能力、语言能力、读书（扩展能力）
+
+技术栈：（2026年2月26截止，一年时间）
+>通用必备：
+1. 计算机网络
+2. 操作系统
+3. 设计模式
+4. 数据结构与算法
+
+> Java核心：
+1. Java基础
+2. Java集合
+3. JVM
+4. JUC
+
+> 数据库：
+1. MySQL
+2. Redis
+3. ElasticSearch
+4. MongoDB
+5. 分布式数据库
+6. 数据库优化
+
+> 框架：
++ SSM（Spring + Spring MVC + MyBatis）
++ SpringBoot
++ MP（MyBatis-Plus，简化MyBatis开发）
++ Spring Security（权限认证）
++ 微服务框架： 
+    - Nacos（服务注册与配置中心）
+    - Hystrix（熔断器，已停更，可考虑替代方案）
+    - Sentinel（流量控制、熔断降级）
+    - OpenFeign（声明式服务调用）
+    - GateWay
+    - Config（配置中心）
+    - Sleuth+Zipkin（分布式链路追踪）
+    - 分布式事务（Seata等）
+    - 分布式锁
+    - 分布式ID生成
+    - CAP理论和BASE理论
+    - 负载均衡（Nginx、Ribbon、Spring Cloud LoadBalancer。）
+
+> 消息队列中间件：
++ RabbitMQ
++ RocketMQ
++ Kafka
+
+> 运维：
++ Linux（服务器操作）
++ Docker（容器化）
++ Kubernetes（K8s，容器编排）
++ CI/CD（Jenkins、GitLab CI/CD，自动化构建和部署）
++ 日志管理（ELK（Elasticsearch + Logstash + Kibana）或Loki + Grafana）
++ 监控系统（Prometheus + Grafana，监控服务性能和健康状态。）
++ 云服务（AWS、阿里云或腾讯云的基础服务（如ECS、RDS））
+
+
+
+趋势学习：
++ AI
++ 大数据
++ 云原生
+
+英语：（2026年2月26）达到B1级别（中级，能进行日常交流）
++ **听力**：
++ **词汇和语法**：
++ **口语练习**：
++ **阅读/写作**：
+
+沟通能力：多学、多说、多听
+
+读书：《如何阅读一本书》《逻辑论》
+
+
+
+
+## 2025-4-15
+今天的话，白天没有工作安排，学了一个HashMap的深入原理，整理一下obsidian的笔记结构。纯纯混子一天。。。
+计划任务：（4.30之前完成，还剩15天）
+1. 学习k8s（4天）（2）
+2. 学习消息中间件kafka（1天）（1）
+3. 学习谷粒商城（10天）（3）
+4. 八股文和简历（可以留到开始找工作开始）（4）
+
+
+## 2025-4-16
+今天工作没任务，学了一天kafka，完成任务，接着开始k8s这四天内学完，应该是到20号结束k8s。
+
+## 2025-4-20
+星期天，开始学习了k8s， 昨天星期六玩了一天，回来就是改论文
+
+## 2025-4-22
+星期二，还在学习k8s实践篇，很多很多，感觉还得花三天时间，这两天上班看了redis、mysql的八股文。
+
+
+## 2025-4-23
+星期三，整理完黑马的面试题[https://heuqqdmbyk.feishu.cn/wiki/RymLwLLWfieibHkjf17cKhY4nlf](https://heuqqdmbyk.feishu.cn/wiki/RymLwLLWfieibHkjf17cKhY4nlf)
+具体的后面面试的时候一边面试一边看吧，接着开始k8s，现在k8s还是在实践篇。
+
+## 2025-4-30
+这几天一直工作没事情干，完完整整复习完了关于MySQL和Redis的所有内容，接下来这部分就是关于需要八股文背的内容了。
+五一劳动节期间完成简历编写，K8s学习，谷粒商城学习。
+宣布4月15号的计划失败。
+
+
+## 2025-5-05
+今天星期一，五一假期结束了，明天开始上班，总结一下五一干了啥，1号2号两天整整玩了两天，3号一整个下午都在学习k8s，关于k8s的学习，搭建了k8s集群，但是后面关于一些其他概念的实现都是没有主动去实现的，4号这天本来是计划去完成一个简历的编写的，但是没有完成，还是自己的执行力比较差，4号还是看了几集k8s的，但是还是玩的最多，打ow打到了两三点，睡觉更是到了5点钟，今天5号12点钟起来，就想着完成简历编写今天就完成任务了，但是还是没有去执行完毕，简历写了一些技术栈和基本信息，这些都是按照大神仿写的，关于项目经历这个部分是最难的，暂时不知道怎么去编写，晚上看了关于java面试的一些经验，有关于boss的竞争力分析，编程的一些感悟，java面试题的一个分享。
+宣布对于五一规划的任务：
+- 简历编写（失败，只写了一个技术栈和基本信息，关于项目经历这块是最难的，还不知道如何去写）
+- k8s学习（失败，还差一半）
+- 谷粒商城（失败，没开始）
+计划这周（5.6——5.9）：围绕一件事情，就是简历的编写和关于简历的内容八股文去好好的复习，准备面试，至于k8s和谷粒商城还是不需要着急的。
+
+
+
+
+## 2025-5-06
+星期二，晴，今天工作没事儿啊，看了关于别人的面试题分享，关于算法（二分查找、冒泡排序、选择排序、插入排序、快速排序、希尔排序）、单例设计模式、集合（List、Map）、JUC（这一块内容太多了，直接背吧，不再去深究了）
+
+
+## 2025-5-07
+星期三，请假一天在家，白天就是打打游戏，晚上根据图灵课堂研究了一些简历的编写
+
+
+## 2025-5-12
+星期一，天气晴，打算在5.24-5.25辞职。
+今天工作上，上午干了工作的事儿，下午培训数据治理，公司现在打算培训三个月的数据治理，后续接数据治理的项目，但是这和我没关系了，我只想混两个星期然后提辞职。
+今天晚上准备面试内容，包含设计模式面试题、框架（SSM、SpringBoot）面试题。
+明天继续扩展一些框架的其他方面的面试题，开始其他知识点的面试题复习。
+
+## 2025-5-13
+星期二，天气晴，辞职时间改了，打算在这周星期天提辞职
+今天工作上是什么都没干，对于个人面试技能方面，学习了SSM+SpringBoot框架部分的面试题，具体的SpringBoot面试题应该还没有弄完，但是SSM的面试题应该是很大部分弄完了，明天还是接着整理面试题，下周开始辞职就是准备在西安练手面试了。
+
+## 2025-5-22
+星期四，上班，复习了JUC八股文，昨天复习了JVM八股，今天和明天完成MySQL、Redis八股文，再普及一下boss的打招呼技巧以及面试技巧就可以开始了。晚上没有看完MySQL，明天继续看MySQL，能把Redis和SSM看完更好
+
+## 2025-5-24
+星期天，休息，下午一点开始在图书馆学习
+## 2025-5-26
+星期一，今天离职了，在家放松一天，开始正式的找工作面试，做一下规划：面试的八股和项目，主要就围绕这两部分。
+背八股：
+1. 消息中间件（RocketMQ、RabbitMQ、Kafka）（27）
+2. JavaSE、集合、JUC、JVM（27）
+3. MySQL、Redis、SSM、设计模式、微服务（28）
+4. 简历项目（29）
+并不严格按照上面顺序，中间还有一些其他东西，最重要的核心还是这些。
+
+今天，打游戏玩到下午三四点，开始学习，整理了RocketMQ、RabbitMQ的面试题
+
+## 2025-5-27
+星期二，离职第二天，今天10点到图书馆，复习Kafka、Javase、Java集合，晚上啥都没干
+
+
+
+## 2025-5-28
+星期三，离职第三天，背八股，复习MySQL、Redis、SSM、微服务、设计模式八股，下午整理完了所有的八股，但是还没有彻底的哪一章完全背下来，感觉就是啥都知道，但是说说不上来的感觉。晚上边背八股，边学面试技巧吧。
+
+
+
+# 个人知识库
+
+## 开发工具
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "开发工具"
+SORT file.mtime DESC
+```
+
+## 框架
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "框架"
+SORT file.mtime DESC
+```
+
+## 扩展
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "扩展"
+SORT file.mtime DESC
+```
+
+## 面试
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "面试"
+SORT file.mtime DESC
+```
+
+
+## 数据管理
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "数据管理"
+SORT file.mtime DESC
+```
+
+## 通用基础
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "通用基础"
+SORT file.mtime DESC
+```
+
+## 微服务
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "微服务"
+SORT file.mtime DESC
+```
+
+## 项目
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "项目"
+SORT file.mtime DESC
+```
+
+## 云原生
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "云原生"
+SORT file.mtime DESC
+```
+
+## Java基础
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "Java基础"
+SORT file.mtime DESC
+```
+
+
+## 中间件
+```dataview
+TABLE dateformat(file.mtime, "yyyy-MM-dd hh:mm:ss") AS "最近修改时间"
+FROM "中间件"
+SORT file.mtime DESC
+```
+

@@ -1,0 +1,9 @@
+/* 编辑模式首行缩进，排除标题行 */ 
+div.cm-line:not(.HyperMD-header) { 
+text-indent: 2em;
+}
+
+/* 预览模式首行缩进 */ 
+.markdown-preview-view div p { 
+text-indent: 2em; 
+}
