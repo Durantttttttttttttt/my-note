@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java技术栈/面试/面试/IMG-20250531215127589.png",
+                "file": "Java技术栈/面试/面试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "IMG-20250531215127589 的反向链接列表"
+              "title": "面试 的反向链接列表"
             }
           },
           {
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java技术栈/面试/面试/IMG-20250531215127589.png",
+                "file": "Java技术栈/面试/面试.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "IMG-20250531215127589 的大纲"
+              "title": "面试 的大纲"
             }
           },
           {
@@ -178,11 +178,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d3c24d0bde360d07",
+  "active": "e01197446f217d24",
   "lastOpenFiles": [
+    "Pasted image 20250531215805.png",
+    "Java技术栈/面试/img/面试/IMG-20250531215719276.png",
+    "Java技术栈/面试/img/面试/IMG-20250531215639504.png",
     "Java技术栈/面试/面试.md",
-    "Java技术栈/面试/面试",
+    "img/Java技术栈/面试/面试/IMG-20250531215537219.png",
+    "img/Java技术栈/面试/面试",
+    "img/Java技术栈/面试",
+    "img/Java技术栈",
+    "img",
     "Java技术栈/面试/面试/IMG-20250531215127589.png",
+    "Java技术栈/面试/面试",
     "Java技术栈/通用基础/设计模式.md",
     "Java技术栈/通用基础/计算机网络.md",
     "Java技术栈/扩展/Java导入导出文件.md",

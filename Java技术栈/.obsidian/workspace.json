@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -170,6 +171,7 @@
   },
   "active": "4a3f6d9b15e8a0ab",
   "lastOpenFiles": [
+    "面试/img/面试/IMG-20250531215639504.png",
     "数据管理/尚硅谷_ShardingSphere5.md",
     "数据管理/Mysql.md",
     "数据管理/img/Mysql/IMG-20250530103442414.png",
