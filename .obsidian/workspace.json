@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Redis"
             }
+          },
+          {
+            "id": "48ef41a09aea0914",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java技术栈/面试/面试.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "面试"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java技术栈/数据管理/Redis.md",
+                "file": "Java技术栈/面试/面试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Redis 的反向链接列表"
+              "title": "面试 的反向链接列表"
             }
           },
           {
@@ -141,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java技术栈/数据管理/Redis.md",
+                "file": "Java技术栈/面试/面试.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Redis 的大纲"
+              "title": "面试 的大纲"
             }
           },
           {
@@ -178,12 +193,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "be12c3f327cd6462",
+  "active": "48ef41a09aea0914",
   "lastOpenFiles": [
-    "Java技术栈/数据管理/Mysql.md",
-    "Java技术栈/数据管理/img/Mysql/IMG-20250601173721644.png",
     "Java技术栈/数据管理/Redis.md",
     "Java技术栈/面试/面试.md",
+    "Java技术栈/数据管理/Mysql.md",
+    "Java技术栈/数据管理/img/Mysql/IMG-20250601173721644.png",
     "Java技术栈/面试/白泽八股文.md",
     "Java技术栈/面试/刷到的面试题.md",
     "Java技术栈/img/面试/IMG-20250513005633713.png",
