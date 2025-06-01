@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7fd118c83d73023b",
+        "id": "23369b505dc8b4ad",
         "type": "tabs",
         "children": [
           {
-            "id": "e01197446f217d24",
+            "id": "be12c3f327cd6462",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java技术栈/面试/面试.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "面试"
+              "title": "新标签页"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java技术栈/面试/面试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "面试 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -141,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java技术栈/面试/面试.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "面试 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -178,12 +172,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e01197446f217d24",
+  "active": "be12c3f327cd6462",
   "lastOpenFiles": [
+    "Java技术栈/面试/面试.md",
+    "Java技术栈/面试/白泽八股文.md",
+    "Java技术栈/面试/刷到的面试题.md",
+    "Java技术栈/img/面试/IMG-20250513005633713.png",
+    "Java技术栈/img/面试/IMG-20250513005633620.png",
+    "Java技术栈/img/面试/IMG-20250513005632500.png",
+    "Java技术栈/img/面试/IMG-20250513005632446.png",
+    "Java技术栈/个人简历第一版（过时）.pdf",
+    "Java技术栈/dataview.md",
     "Pasted image 20250531215805.png",
     "Java技术栈/面试/img/面试/IMG-20250531215719276.png",
     "Java技术栈/面试/img/面试/IMG-20250531215639504.png",
-    "Java技术栈/面试/面试.md",
     "img/Java技术栈/面试/面试/IMG-20250531215537219.png",
     "img/Java技术栈/面试/面试",
     "img/Java技术栈/面试",
@@ -195,8 +197,6 @@
     "Java技术栈/通用基础/计算机网络.md",
     "Java技术栈/扩展/Java导入导出文件.md",
     "Java技术栈/扩展/支付接口.md",
-    "Java技术栈/扩展/扩展.md",
-    "Java技术栈/dataview.md",
-    "Java技术栈/个人简历2.pdf"
+    "Java技术栈/扩展/扩展.md"
   ]
 }
