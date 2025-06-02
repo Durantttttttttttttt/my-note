@@ -6930,6 +6930,9 @@ t3.start();
 
 join()方法表示需要等待线程调用join()方法的线程执行完，主线程或者其他线程才能结束。
 
+还可以使用CountDownLatch倒计时器分别等待线程释放。
+
+还可以使用LockSupport的park()和unpark()方法
 ### notify()和notifyAll()的区别？
 
 notify 随机唤醒其中一个wait的线程，随机唤醒哪个线程取决于调度器
@@ -7063,7 +7066,16 @@ try {
 
 ### 虚拟线程
 
-虚拟线程是JDK19引入的一个新特性，通过
+虚拟线程是JDK19引入的一个新特性，通过线程可以创建上千个虚拟线程来执行，虚拟线程占用空间更小，并发速度就更快
+
+### LockSupport的park()和unpark()
+
+**park和unpark是LockSupport中的方法**
+在 Java 中，LockSupport.park() 是 java.util.concurrent.locks.LockSupport 类提供的一个静态方法，用于暂停（阻塞）当前线程，使其进入 WAITING 或 TIMED_WAITING 状态，直到被唤醒或满足特定条件。
+
+### 守护线程
+线程分为用户线程和守护线程，守护线程是JVM的后台线程，比如垃圾回收线程就是一个守护线程，守护线程需要等待普通线程都停止运行之后自动关闭。
+通过设置thread.setDaemon(true)来把一个线程设置为守护线程。
 
 ## 线程中并发锁
 
@@ -7196,6 +7208,17 @@ ReentrantLock内部有个实现类是Sync，Sync类实现了AQS抽象类，Sync�
 
 
 [说说ReentrantLock实现原理](https://www.cnblogs.com/mic112/p/16365413.html)
+
+### ReentrantLock中的公平锁和非公平锁的底层实现
+
+底层实现是使用AQS进行排队，区别在于，线程使用lock()方法加锁，如果是公平锁，先检查AQS队列存在线程在排队，如果有线程排队，那么当前线程也进行排队，如果是非公平锁，则不会检查是否有线程排队，而是直接竞争锁。
+
+### ReentrantLock中的tryLock()和lock()方法的区别？
+tryLock()表示尝试加锁，可能加到，也可能加不到，该方法不会阻塞线程，如果加到锁返回ture，没有加到则返回false
+
+lock()表示阻塞加锁，线程会阻塞直到加到锁，方法没有返回值
+
+
 
 ### Synchronized和Lock之间的区别？
 第一，语法层面
@@ -7343,12 +7366,12 @@ Jdk中提供了很多阻塞队列，开发中常见的有两个：`ArrayBlocking
 
 另外，它们在加锁机制上也有所不同。`ArrayBlockingQueue`使用一把锁来控制对队列的访问，这意味着读写操作都是互斥的。而`LinkedBlockingQueue`则使用两把锁，一把用于控制读操作，另一把用于控制写操作，这样可以提高并发性能。
 
-### 如何确定核心线程数？
+### 如何确定核心线程数和最大核心线程数量？
 
 1. 高并发、任务执行时间短 -->（ CPU核数+1 ），减少线程上下文的切换
 2.  并发不高、任务执行时间长
 	- IO密集型的任务 --> (CPU核数 * 2 + 1)
-	- 计算密集型任务 --> （ CPU核数+1 ）
+	- CPU密集型任务 --> （ CPU核数+1 ）
 3. 高并发、业务执行时间长，解决这种类型任务的关键不在于线程池而在于整体架构的设计，看看这些业务里面某些数据是否能做缓存是第一步，增加服务器是第二步
 
 
@@ -7383,6 +7406,16 @@ Executors.newSingleThreadExecutor和Executors.newFixedThreadPool两个方法的w
 - 手动维护一个公共计数，原理和闭锁类似，就是更加灵活
 - 使用`submit`想线程池提交任务，`Future`判断任务执行状态
 
+### 线程池提交一个任务的流程
+
+1. 使用`execute()`方法提交一个Runnable对象
+2. 先判断当前线程数量是否小于`corePoolSize`
+3. 小于，创建新线程执行Runnable
+4. 大于等于，将Runnable加入到workQueue工作队列中
+5. 如果WorkQueue没满，那么正常入队，等待线程调度
+6. 如果WorkQueue满了，入队失败，下面尝试增加线程
+7. 如果线程数量小于maximumPoolSize最大线程数量，创建新线程执行任务
+8. 大于等于，则执行拒绝策略，针对Runnable
 
 
 ## 线程使用场景
@@ -7440,7 +7473,7 @@ ThreadLocal 主要功能有两个，第一个是可以实现资源对象的线�
 当调用 remove 方法，就是以 ThreadLocal 自己作为 key，移除当前线程关联的资源值
 
 **TheadLocal为什么会导致内存溢出：**
-是因为ThreadLocalMap 中的 key 被设计为弱引用，它是被动的被GC调用释放key，不过关键的是只有key可以得到内存释放，而value不会，因为value是一个强引用。
+是因为ThreadLocalMap 中的 key 被设计为弱引用，它是被动的被GC调用释放key，不过关键的是**只有key可以得到内存释放，而value不会，因为value是一个强引用。**
 在使用ThreadLocal 时都把它作为静态变量（即强引用），因此无法被动依靠 GC 回收，所以建议主动的remove 释放 key，这样就能避免内存溢出。
 
 
