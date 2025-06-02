@@ -7050,8 +7050,20 @@ try {
         }
 ```
 
+### 如何理解阻塞、非阻塞和同步、异步？
+
+同步异步关注的是消息通信机制
+同步：发生调用，没有得到结果就是不会返回，一直等待消息结果返回
+异步：发生调用立即返回，调用的结果可以通过状态、通知、回调三种途径通知调用者
+
+阻塞和非阻塞关注的是程序执行机制
+阻塞是指，在没有得到结果之前会一直阻塞，等到结果返回
+非阻塞是指，没有得到结果会返回，可以隔一段时间再来获取结果
 
 
+### 虚拟线程
+
+虚拟线程是JDK19引入的一个新特性，通过
 
 ## 线程中并发锁
 
@@ -7362,6 +7374,15 @@ Executors.newCachedThreadPool和Executors.newScheduledThreadPool没有指定线�
 Executors.newSingleThreadExecutor和Executors.newFixedThreadPool两个方法的workQueue参数为new LinkedBlockingQueue\<Runnable\>()，容量为Integer.MAX_VALUE，如果瞬间请求非常大，会有OOM风险。
 
 所以，我们一般推荐使用ThreadPoolExecutor来创建线程池，这样可以明确规定线程池的参数，避免资源的耗尽。
+
+### 判断线程池任务执行完成的方式
+五种方式：
+- `isTerminated()`方法，在执行`shutdown()`，关闭线程池后，判断是否所有任务已经完成。
+- `ThreadPoolExecutor`的`getCompletedTaskCount()`方法，判断完成任务数量和全部任务数量是否相等
+- `CountDownLatch`计数器，使用闭锁计数来判断是否全部完成。
+- 手动维护一个公共计数，原理和闭锁类似，就是更加灵活
+- 使用`submit`想线程池提交任务，`Future`判断任务执行状态
+
 
 
 ## 线程使用场景
