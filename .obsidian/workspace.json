@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java技术栈/框架/框架面试题.md",
+                "file": "Java技术栈/面试/面试.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "框架面试题"
+              "title": "面试"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java技术栈/框架/框架面试题.md",
+                "file": "Java技术栈/面试/面试.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "框架面试题 的大纲"
+              "title": "面试 的大纲"
             }
           },
           {
@@ -180,8 +180,8 @@
   },
   "active": "ab2bd6c38ac92b79",
   "lastOpenFiles": [
-    "Java技术栈/面试/面试.md",
     "Java技术栈/框架/框架面试题.md",
+    "Java技术栈/面试/面试.md",
     "Java技术栈/框架/MybatisPlus.md",
     "Java技术栈/Java基础/集合专题.md",
     "Java技术栈/Java基础/HashMap专题.md",
