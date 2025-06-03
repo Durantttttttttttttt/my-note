@@ -48,7 +48,7 @@ String转Integer的方法：
 
 线程安全性上：String是线程安全的，StringBuilder不是线程安全的，StringBuffer是线程安全的
 
-线程：如果单线程，字符串不可变用String，字符串可变用StringBuilder，如果多线程推荐使用StringBuffer
+选择上：如果单线程，字符串不可变用String，字符串可变用StringBuilder，如果多线程推荐使用StringBuffer
 
 ### 直接赋值String字符串和new String()的区别？
 
