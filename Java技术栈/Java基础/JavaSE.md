@@ -38,9 +38,39 @@ String不可变，线程安全
 
 String对象使用+拼接会生成新的String对象和StringBuilder对象，增加堆内存开销
 
-String转Integer的方法：
-- Integer.parseInt(String s)
-- Integer.valueOf(String s)
+
+**字符串转基本类型：** 使用parseXXX方法
+**基本类型转字符串：** 使用String的valueOf()方法
+
+
+**String类的常用方法：**
+- s.length() 获取字符串的长度
+- s.charAt(int index) 获取字符串某一个位置上的字符
+- s.substring(int beginindex) 获取子串
+- s.compareTo(String anotherString) 和目标字符串进行比较，按照字符串中字符顺序依次慢慢的比较
+- **equals(Object anotherObject)** 比较字符串内容
+- **concat(String str)**  字符串连接
+- **indexOf(int ch/String str)**  在字符串中查找字符/字符串
+- **lastIndexOf(int ch/String str)**  从字符串末尾往前面查找
+- **toLowerCase()** **toUpperCase()**  大小写转换
+- **replace(char oldChar, char newChar)**  替换字符串中所有oldChar为newChar
+- **trim()**  截去字符串两端的空格，但对于中间的空格不处理。
+- **startsWith(String prefix)** **endWith(String suffix)** 用来比较字符串的开始或者结束位置的字符串是否相等。
+- **contains(String** **str)** 判断参数str字符串是否在字符串中。
+- **split(String str)** 将str作为分隔符进行字符串分解，分解后的字字符串在字符串数组中返回
+### String的intern()方法
+intern() 方法用于在运行时将字符串添加到内部的字符串池中，并返回字符串池中的引用。
+
+当调用 intern() 方法时，如果字符串常量池已经包含该字符串，则返回池中的引用，如果池中没有该字符串，则将其添加到池中，并返回该字符串的引用。
+
+```java
+String s1 = new String("Hello");
+String s2 = "Hello";
+String s3 = s1.intern();
+
+System.out.println(s1 == s2);  // false
+System.out.println(s2 == s3);  // true
+```
 
 ### String、StringBuilder、StringBuffer
 
@@ -59,9 +89,10 @@ new String方式：String s = new String("yang");
 再就是判断的时候，如果是直接赋值，那么多个对象的引用指向的都是字符串池中的字面量，引用地址相同，如果是new String()指向的是堆上的不同对象，地址不同。
 
 
+
 ## 接口和抽象类
 接口是方法的集合，通常只声明方法签名（无实现），由实现类提供具体实现。
-接口中不允许有变量，常量默认 public static final，必须初始化。抽象方法默认public abstract，无方法体。JDK8后使用 default 关键字，提供默认实现。JDK8后提供静态方法，使用 static 关键字，属于接口本身。JDK9后提供私有方法，使用 private 关键字，仅接口内部使用。
+接口中不允许有变量，常量默认 public static final，必须初始化。抽象方法默认public abstract，无方法体。JDK8后使用 default 关键字，提供默认实现，所有开始可以有方法体了。JDK8后提供静态方法，使用 static 关键字，属于接口本身。JDK9后提供私有方法，使用 private 关键字，仅接口内部使用。
 类可实现多个接口，弥补 Java 单继承限制。
 
 抽象类是使用 abstract 关键字声明的类，不能实例化，包含抽象方法（无实现）和具体方法（有实现）。
@@ -80,15 +111,15 @@ new String方式：String s = new String("yang");
 2. 抽象类更像是一个模板式设计，共享代码，接口更像是一种行为规范，规定接口功能
 
 ## 对象
-
-
 ### Java对象创建过程
-Java 对象创建主要包括以下步骤：
-1. **类加载**：确保类元信息加载到 JVM。
-2. **内存分配**：为对象分配堆内存。
-3. **初始化零值**：将对象内存初始化为默认值。
-4. **设置对象头**：配置对象头信息（如类元数据、哈希码）。
-5. **执行构造器**：调用 \<init\> 方法，完成对象初始化。
+一个对象的创建过程要经历**类初始化阶段和类实例化阶段**。
+
+对象的创建过程：对象的创建首先会加载对象进内存，给对象分配空间，分配空间的时候会进行赋初值，然后给对象进行初始化，这个初始化是根据给的值进行赋值，初始化分为**实例变量初始化、实例代码块初始化和构造函数初始化**。另外，在创建对象之前，会创建对象的父类以及超类的实例化，最后保证该类的实例化。
+
+类初始化和创建时机：类初始化是指将类加载到内存分配空间，并调用类初始化cinit对类变量进行赋值，再一次初始化会调用类变量赋值和类实例化代码块。在类的生命周期中，一个类构造器只会被调用一次，但是对象的构造器init会被调用多次。
+
+总的来说，类实例化的一般过程是：**父类的类构造器\<clinit\>() -> 子类的类构造器\<clinit\>() -> 父类的成员变量和实例代码块 -> 父类的构造函数 -> 子类的成员变量和实例代码块 -> 子类的构造函数。**
+
 
 
 ### 创建对象的几种方式
@@ -100,7 +131,6 @@ Java 对象创建主要包括以下步骤：
 
 
 ### Object对象方法
-
 - getClass()：获取类元数据类
 - hashCode()：获取对象的哈希码
 - equals()：比较对象是否相等
@@ -110,15 +140,21 @@ Java 对象创建主要包括以下步骤：
 - notify()：唤醒
 - notifyAll()：唤醒所有
 - finalize()：垃圾回收
+
+
 ### 深克隆、浅克隆
 - 浅克隆：复制对象本身及其基本类型字段，但对于引用类型字段，仅复制引用地址（指向相同的对象），不复制引用对象的内容。
 - 深克隆：复制对象及其所有字段，包括引用类型字段的完整副本（递归复制整个对象图）。
+
+
 
 ### 四种引用：引用类型决定了对象在垃圾回收（GC）中的存活行为
 1. 强引用：最常见的引用类型，只要有强引用，就不会被回收
 2. 软引用：通过 java.lang.ref.SoftReference 类创建，对象在内存不足时可能被回收。适用于内存敏感的缓存（如图片缓存），对象可重建但希望尽量保留。
 3. 弱引用：通过 java.lang.ref.WeakReference 类创建，对象在下次 GC 时可能被回收。适用于短期存活对象、避免内存泄漏（如 WeakHashMap、事件监听器）。
 4. 虚引用：通过 java.lang.ref.PhantomReference 类创建，最弱的引用，对象几乎等同于不可达，依赖队列处理，适用对象回收后的清理工作（如释放非堆资源、日志记录）。
+
+
 ## 关键字
 ### &和&&的区别
 单个&用于位运算和逻辑运算，逻辑运算会判断两个表达式
