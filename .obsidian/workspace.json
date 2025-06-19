@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "34a3ef1838b98979",
+        "id": "a148b95cedac928a",
         "type": "tabs",
         "children": [
           {
-            "id": "356816c634b7d779",
+            "id": "034fe9c7bee05a71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java技术栈/Java基础/JavaSE.md",
+                "file": "Java技术栈/工作/工作内容.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaSE"
+              "title": "工作内容"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java技术栈/Java基础/JavaSE.md",
+                "file": "Java技术栈/工作/工作内容.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "JavaSE 的大纲"
+              "title": "工作内容 的大纲"
             }
           },
           {
@@ -178,8 +178,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "356816c634b7d779",
+  "active": "034fe9c7bee05a71",
   "lastOpenFiles": [
+    "Java技术栈/Java基础/JavaSE.md",
     "Java技术栈/Java基础/JVM.md",
     "Java技术栈/Java基础/集合专题.md",
     "Java技术栈/Java基础/HashMap专题.md",
@@ -198,7 +199,6 @@
     "Java技术栈/框架/MybatisPlus.md",
     "Java技术栈/数据管理/Redis.md",
     "Java技术栈/数据管理/Mysql.md",
-    "Java技术栈/Java基础/JavaSE.md",
     "Java技术栈/个人简历第一版（过时）.pdf",
     "Java技术栈/通用基础/操作系统.md",
     "Java技术栈/通用基础/力扣刷题笔记.md",
