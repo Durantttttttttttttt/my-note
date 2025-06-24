@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "工作内容"
             }
-          },
-          {
-            "id": "191af8b566a7822a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "英语/英语语法新思维.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "英语语法新思维"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "英语/英语语法新思维.md",
+                "file": "Java技术栈/工作/工作内容.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "英语语法新思维 的大纲"
+              "title": "工作内容 的大纲"
             }
           },
           {
@@ -193,17 +178,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "191af8b566a7822a",
+  "active": "034fe9c7bee05a71",
   "lastOpenFiles": [
-    "Java技术栈/工作/工作内容.md",
+    "Java技术栈/工作/img/工作内容/IMG-20250624181534924.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624181502153.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624181416175.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624181319499.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624181203908.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624175958592.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624174157449.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624173621504.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624171855691.png",
+    "Java技术栈/工作/img/工作内容/IMG-20250624171649470.png",
     "英语/英语语法新思维.md",
+    "Java技术栈/工作/工作内容.md",
     "英语",
     "Java技术栈/工作/img/工作内容/IMG-20250622224907451.png",
-    "Java技术栈/工作/img/工作内容/IMG-20250622224815240.png",
-    "Java技术栈/工作/img/工作内容/IMG-20250622224717335.png",
-    "Java技术栈/工作/img/工作内容/IMG-20250622222347963.png",
-    "Java技术栈/工作/img/工作内容/IMG-20250622222332066.png",
-    "Java技术栈/工作/img/工作内容/IMG-20250622222324490.png",
     "Java技术栈/Java基础/JavaSE.md",
     "Java技术栈/Java基础/JVM.md",
     "Java技术栈/Java基础/集合专题.md",
@@ -211,11 +201,8 @@
     "Java技术栈/Java基础/JUC.md",
     "Java技术栈/dataview.md",
     "Java技术栈/面试/面试.md",
-    "Java技术栈/工作/img/工作内容/IMG-20250610120215662.png",
-    "Java技术栈/工作/img/工作内容/IMG-20250610120159391.png",
     "Java技术栈/工作/img/工作内容",
     "Java技术栈/工作/img",
-    "Java技术栈/工作/img/工作内容/IMG-20250610120133908.png",
     "Java技术栈/工作",
     "Java技术栈/微服务/微服务.md",
     "Java技术栈/框架/框架面试题.md",
@@ -227,7 +214,6 @@
     "Java技术栈/通用基础/力扣刷题笔记.md",
     "Java技术栈/通用基础/数据结构与算法.md",
     "Java技术栈/通用基础/设计模式.md",
-    "Java技术栈/数据管理/img/Mysql/IMG-20250601173721644.png",
     "Java技术栈/面试/白泽八股文.md",
     "Java技术栈/面试/刷到的面试题.md",
     "img/Java技术栈/面试/面试",
