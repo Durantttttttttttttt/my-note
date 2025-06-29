@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java技术栈/工作/工作内容.md",
+                "file": "英语/英语语法新思维.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "工作内容"
+              "title": "英语语法新思维"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java技术栈/工作/工作内容.md",
+                "file": "英语/英语语法新思维.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "工作内容 的大纲"
+              "title": "英语语法新思维 的大纲"
             }
           },
           {
@@ -180,6 +180,7 @@
   },
   "active": "034fe9c7bee05a71",
   "lastOpenFiles": [
+    "Java技术栈/工作/工作内容.md",
     "Java技术栈/工作/img/工作内容/IMG-20250627174144784.png",
     "5969d9f030bd0aee42dc2c60ca56c96e.jpg",
     "Java技术栈/工作/img/工作内容/IMG-20250625145519006.png",
@@ -190,9 +191,7 @@
     "Java技术栈/工作/img/工作内容/IMG-20250624181416175.png",
     "Java技术栈/工作/img/工作内容/IMG-20250624181319499.png",
     "Java技术栈/工作/img/工作内容/IMG-20250624181203908.png",
-    "Java技术栈/工作/img/工作内容/IMG-20250624175958592.png",
     "英语/英语语法新思维.md",
-    "Java技术栈/工作/工作内容.md",
     "英语",
     "Java技术栈/Java基础/JavaSE.md",
     "Java技术栈/Java基础/JVM.md",
