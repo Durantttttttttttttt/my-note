@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java技术栈/工作/工作内容.md",
+                "file": "Java技术栈/dataview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "工作内容"
+              "title": "dataview"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java技术栈/工作/工作内容.md",
+                "file": "Java技术栈/dataview.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "工作内容 的大纲"
+              "title": "dataview 的大纲"
             }
           },
           {
@@ -180,6 +180,7 @@
   },
   "active": "e9633c1ef260daa3",
   "lastOpenFiles": [
+    "Java技术栈/工作/工作内容.md",
     "Java技术栈/工作/img/工作内容/IMG-20250629222442069.png",
     "Java技术栈/工作/img/工作内容/IMG-20250629222410772.png",
     "Java技术栈/工作/img/工作内容/IMG-20250629222340631.png",
@@ -187,12 +188,10 @@
     "Java技术栈/工作/img/工作内容/IMG-20250629222252396.png",
     "Java技术栈/工作/img/工作内容/IMG-20250629221430054.png",
     "英语/英语语法新思维.md",
-    "Java技术栈/工作/工作内容.md",
     "Java技术栈/工作/img/工作内容/IMG-20250627174144784.png",
     "5969d9f030bd0aee42dc2c60ca56c96e.jpg",
     "Java技术栈/工作/img/工作内容/IMG-20250625145519006.png",
     "Java技术栈/工作/img/工作内容/IMG-20250625145342085.png",
-    "Java技术栈/工作/img/工作内容/IMG-20250625145233294.png",
     "英语",
     "Java技术栈/Java基础/JavaSE.md",
     "Java技术栈/Java基础/JVM.md",
