@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "afce7cd96f9ca596",
+        "id": "01909914eb1d5c85",
         "type": "tabs",
         "children": [
           {
-            "id": "e9633c1ef260daa3",
+            "id": "aeba0728d05d29b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java技术栈/dataview.md",
+                "file": "Java技术栈/工作/工作内容.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dataview"
+              "title": "工作内容"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java技术栈/dataview.md",
+                "file": "Java技术栈/工作/工作内容.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "dataview 的大纲"
+              "title": "工作内容 的大纲"
             }
           },
           {
@@ -178,8 +178,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e9633c1ef260daa3",
+  "active": "aeba0728d05d29b8",
   "lastOpenFiles": [
+    "Java技术栈/dataview.md",
     "Java技术栈/工作/工作内容.md",
     "Java技术栈/工作/img/工作内容/IMG-20250629222442069.png",
     "Java技术栈/工作/img/工作内容/IMG-20250629222410772.png",
@@ -198,7 +199,6 @@
     "Java技术栈/Java基础/集合专题.md",
     "Java技术栈/Java基础/HashMap专题.md",
     "Java技术栈/Java基础/JUC.md",
-    "Java技术栈/dataview.md",
     "Java技术栈/面试/面试.md",
     "Java技术栈/工作/img/工作内容",
     "Java技术栈/工作/img",
